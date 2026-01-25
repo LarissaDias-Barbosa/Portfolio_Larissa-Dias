@@ -1,0 +1,229 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;    
+}
+
+body{    
+background-color: black;
+color: white;
+font-family: Arial, Helvetica, sans-serif;
+text-align: left;
+line-height: 1.6;
+margin: 0;
+}
+
+#sobre h1{
+max-width: 700px;
+font-size: 2.5rem;
+margin-top: 3rem;
+margin-bottom: 0.5rem;
+}
+
+#sobre p {
+  max-width: 700px;
+  margin-top: 0;
+  color: #cbd5f5;
+}
+
+#minhas-redes {
+  display: flex;
+  gap: 2.2rem;
+  justify-content: center; /* horizontal */
+  align-items: center;     /* vertical */
+}
+
+#minhas-redes{    
+font-size: 15rem;
+color: #c084fc; 
+transition:color 0.3s ease, transform 0.3s ease; 
+}
+
+#minhas-redes a:houver {
+color: #ffffff;
+transform:translateY(-2px)    
+}
+
+.foto-perfil img{
+width: 160px;
+height: 160px;
+border-radius: 50%;
+object-fit: cover;
+border: 3px solid #ddd;
+justify-content: right;
+}
+
+#skills h2{
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.skills-container{
+  display:flex;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.skill-card{
+flex: 1;
+max-width: 220px;
+text-align: center;
+}
+
+.skill-card img {
+  width: 60px;               /* tamanho profissional */
+  margin-bottom: 0.75rem;
+}
+
+.skill-card h3 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.skill-card p {
+  font-size: 0.9rem;
+  color: #cbd5f5;
+  line-height: 1.4;
+}
+
+.projects{
+max-width: 1100px;
+margin: 0 auto; 
+padding: 2rem; 
+}
+
+.projects h2{
+text-align: center;
+margin-bottom: 3rem;
+}
+
+.projects-container {
+ display: grid;
+ grid-template-columns: repeat(2, 1fr);
+ gap: 2rem; 
+}
+
+.project-card {
+display: flex;
+flex-direction: column;
+text-decoration: solid;
+}
+
+.btn-github{
+margin-top: auto;
+}
+
+.btn-github {
+  display: inline-block;
+  margin-top: 1.5rem;
+  align-self: flex-start;
+  background-color: #7c3aed; /* roxo elegante */
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-github:hover {
+  background-color: #9f67ff;
+}
+
+#Entre-em-Contato{
+max-width: 500px; 
+margin: 4rem auto 0;
+padding: 2rem;
+text-align: center;
+}
+
+#Entre-em-Contato form{
+display: flex;
+flex-direction: column;
+gap: 1.2rem;
+margin-top: 2rem; 
+}
+
+#Entre-em-contato label{
+display:flex;
+flex-direction: column;
+align-items: flex-start;
+font-size: 1.2rem;
+color: #e5e7eb;
+gap: 0.4rem;
+}
+
+#Entre-em-contato input,
+#Entre-em-contato textarea{
+width: 100%; 
+padding: 0.75rem;
+font-size: 1rem;
+color: #e5e7eb;
+}
+
+#Entre-em-Contato input:focus,
+#Entre-em-Contato textarea:focus {
+  outline: none;
+  border-color: #c084fc;
+}
+
+#Entre-em-Contato button {
+  margin-top: 1rem;
+  padding: 0.8rem;
+  background-color: #7c3aed;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#Entre-em-Contato button:hover {
+  background-color: #9f67ff;
+  transform: translateY(-2px);
+}
+
+footer {
+max-width: 1100px;
+margin: 4rem auto 0;
+padding: 2rem;
+text-align: center;
+}
+
+footer p{
+font-size: 0.9rem;
+margin-bottom: 1rem;
+color: #cdb5f5;
+}
+
+.footer .Minhas-Redes{
+margin-top: 2rem;
+justify-content: center;
+}
+
+.Minhas-Redes{
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 8rem; 
+}
+
+.Minhas-Redes a {
+color: #b149b1;
+font-size: 15rem;
+padding: 6rem;
+transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.Minhas-Redes{
+color: #e9d5ff;
+transform: translateY(-2px);  
+}
+
+.Minhas-Redes{
+margin-top: 2rem;
+justify-content: center;
+}
+
