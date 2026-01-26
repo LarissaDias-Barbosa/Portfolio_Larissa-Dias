@@ -13,44 +13,89 @@ line-height: 1.6;
 margin: 0;
 }
 
-#sobre h1{
-max-width: 700px;
-font-size: 2.5rem;
-margin-top: 3rem;
-margin-bottom: 0.5rem;
+.menu {
+  display :flex;
+  gap: 6px;
 }
 
-#sobre p {
-  max-width: 700px;
-  margin-top: 0;
-  color: #cbd5f5;
+.menu a {
+  color:#cdb5f5;
+  text-decoration: none;
+  font-size: 1em;
+  position: relative;
+}
+
+.menu a:hover {
+  color: #fff;
+}
+
+#hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 80px 20px;
+}
+
+.foto-perfil img{
+width: 220px;
+height: 220px;
+border-radius: 50%;
+object-fit: cover;
+border: 3px solid #ddd;
+justify-content: left;
+}
+
+#sobre {
+  max-width: 520px;
+  line-height: 1.6;
+  text-align: right;
+}
+
+#sobre-mim {
+  max-width: 700px; 
+  margin: 0 auto;
+  padding:60px 20px;
+  text-align: center; 
+}
+
+#sobre-mim h2{
+  margin-bottom: 20px;
+  font-size: 32px;
+}
+
+#sobre-mim p{
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 12px;
 }
 
 #minhas-redes {
   display: flex;
   gap: 2.2rem;
-  justify-content: center; /* horizontal */
-  align-items: center;     /* vertical */
 }
 
-#minhas-redes{    
-font-size: 15rem;
-color: #c084fc; 
-transition:color 0.3s ease, transform 0.3s ease; 
+.social-icons {
+  display: flex;
+  gap: 16px;
 }
 
-#minhas-redes a:houver {
-color: #ffffff;
-transform:translateY(-2px)    
-}
-
-.foto-perfil img{
-width: 160px;
-height: 160px;
+.social-icons a {
+width: 44px;
+height: 44px;
+color: #b149b1;
 border-radius: 50%;
-object-fit: cover;
-border: 3px solid #ddd;
-justify-content: right;
+display: flex;
+align-items: flex-end;
+justify-content: flex-end;
+text-decoration: none;
+transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons i{
+  font-size: 20px;
+  color: #fff;
 }
 
 #skills h2{
@@ -131,44 +176,39 @@ margin-top: auto;
   background-color: #9f67ff;
 }
 
-#Entre-em-Contato{
+#Contato{
 max-width: 500px; 
 margin: 4rem auto 0;
 padding: 2rem;
 text-align: center;
 }
 
-#Entre-em-Contato form{
+#Contato form{
 display: flex;
 flex-direction: column;
 gap: 1.2rem;
-margin-top: 2rem; 
+margin-top: 1rem; 
 }
 
-#Entre-em-contato label{
-display:flex;
-flex-direction: column;
-align-items: flex-start;
-font-size: 1.2rem;
-color: #e5e7eb;
-gap: 0.4rem;
-}
-
-#Entre-em-contato input,
-#Entre-em-contato textarea{
+#Contato input,
+#Contato textarea{
 width: 100%; 
-padding: 0.75rem;
-font-size: 1rem;
+padding: 0.75rem 1rem;
+font-size: 6rem;
 color: #e5e7eb;
+background-color: #111;
+border: 1px solid #6c3df4;
+border-radius: 6px;
 }
 
-#Entre-em-Contato input:focus,
-#Entre-em-Contato textarea:focus {
-  outline: none;
-  border-color: #c084fc;
+#Contato input:placeholder,
+#Contato textarea:placeholder {
+  color: #9ca3af;
+  font-size: 0.95rem;
+  font-family: inherit;
 }
 
-#Entre-em-Contato button {
+#Contato button {
   margin-top: 1rem;
   padding: 0.8rem;
   background-color: #7c3aed;
@@ -180,7 +220,7 @@ color: #e5e7eb;
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-#Entre-em-Contato button:hover {
+#Contato button:hover {
   background-color: #9f67ff;
   transform: translateY(-2px);
 }
@@ -203,27 +243,36 @@ margin-top: 2rem;
 justify-content: center;
 }
 
-.Minhas-Redes{
+#minhas-redes{
 display: flex;
-justify-content: center;
-align-items: center;
-gap: 8rem; 
+justify-content: center; 
 }
 
-.Minhas-Redes a {
+.social-icons {
+  display: flex;
+  gap: 16px;
+}
+
+.social-icons a {
+width: 44px;
+height: 44px;
 color: #b149b1;
-font-size: 15rem;
-padding: 6rem;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+text-decoration: none;
 transition: color 0.3s ease, transform 0.3s ease;
 }
 
-.Minhas-Redes{
-color: #e9d5ff;
-transform: translateY(-2px);  
+.social-icons i{
+  font-size: 20px;
+  color: #fff;
 }
 
-.Minhas-Redes{
-margin-top: 2rem;
-justify-content: center;
+.social-icons a:hover {
+transform: translateY(-4px);  
+box-shadow: 0 8px 20px rgba(108, 61, 244, 0.4);
 }
+
 

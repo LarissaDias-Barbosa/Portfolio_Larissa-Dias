@@ -9,21 +9,44 @@
         <title>Portifólio</title>
     </head>
 
+    <nav>
+      <ul class="menu">
+         <li><a href="#sobre">Sobre</a></li>
+         <li><a href="#sobre-mim">Sobre-Mim</a></li>
+         <li><a href="#Minhas-Redes">Minhas-Redes</a></li>
+         <li><a href="#skills">Skills</a></li>
+         <li><a href="#projects">Projects</a></li> 
+         <li><a href="#Entre-em-Contato">Contato</a></li>
+        </ul> 
+         </nav>
+
     <body>
 
         <main> 
-        <section id="sobre">   
+        <section id="hero"> 
+         <div class="foto-perfil">
+         <img src="img/minha-foto.jpg" alt="Foto de Larissa Dias">
+        </div>  
+
+        <div id="sobre">
         <h1>Larissa Dias</h1>
         <p>
            Sou desenvolvedora, em formação, estou no primeiro período da faculdade de análise e desenvolvimento de sistemas.  
         </p>
-        <p>
-         Comecei minha trajetória, na área de tecnologia, ainda na infância, aos 6 anos de idade, desde de então tive certeza da profissão que sempre quiz seguir,
-           e exercer.
-        </p>
-        </section>
+        </div>
+       </section>
+       </main>
 
-        <section id="Minhas-Redes">
+       <section id="sobre-mim">
+         <h2>Sobre Mim</h2>
+         <p>Sou estudante, com foco back-end, buscando solucionar problemas reais, com código, dedico-me a desenvolver APIs escaláveis,
+            integrar com bancos de dados, para deixar mais perto do profissional possível. 
+         </p>
+          <p>Quando não estou estudando, gosto de ler, assistir séries, e aprender algo novo, sempre buscando otimizar o conhecimento</p>
+       </section> 
+
+        <section id="minhas-redes">
+            <div class="social-icons">
             <a href="https://instagram.com" target="_blank" aria-label="Instagram">
                <i class="fa-brands fa-instagram"></i>
             </a>
@@ -33,11 +56,8 @@
             <a href="https://github.com/LarissaDias-Barbosa" target="_blank" aria-label="Github">
                <i class="fa-brands fa-github"></i>
             </a>
+             </div>
         </section>
-
-        <div class="foto-perfil">
-         <img src="img/minha-foto.jpg" alt="Foto de Larissa Dias">
-        </div>
 
         <section id="skills">
         <h2>Minhas Skills</h2>
@@ -99,27 +119,33 @@
              
         </main>
 
-        <section id="Entre-em-Contato">
+        <section id="Contato">
            <h3>Ficou interessado(a)</h3>
            <p>
              Entre em contato comigo
            </p>
 
-           <form>
-            <label>
-               Nome
-               <input type="text" name="name" required />
-            </label>
+           <form class="Contato-form">
+            <input
+              type="text"
+              name="nome"
+              placeholder="Nome"
+              required
+            >
 
-            <label>
-               Email
-               <input type="email" name="email" required />
-            </label>
+            <input
+              type="email"
+              name="email"
+              placeholder="Email"
+              required
+            >
 
-            <label>
-                Mensagem
-                <textarea name="mensagem" rows="5" required></textarea>
-            </label>
+            <textarea
+               name="mensagem"
+               placeholder="Mensagem"
+               rows="5"
+               required
+            ></textarea>
 
            <button type="submit">Enviar</button> 
            </form>
@@ -128,7 +154,8 @@
         <footer id="footer">
          <p>&copy; 2026 Larissa Dias - Todos os direitos reservados</p>
 
-        <section id="Minhas-Redes">
+        <section id="minhas-redes">
+         <div class="social-icons">
         <a href="https://github.com/LarissaDias-Barbosa" target="_blank" aria-label="Github">
          <i class="fa-brands fa-github"></i> 
         </a>
@@ -141,6 +168,7 @@
          <i class="fa-solid fa-envelope"></i> 
         </a>
         </section>
+         </div>
        </footer> 
     </body>
 </html>
