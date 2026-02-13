@@ -27,7 +27,7 @@ margin: 0;
 }
 
 .menu a:hover {
-  color: #fff;
+  color: #f3d3d3;
 }
 
 #hero {
@@ -39,7 +39,7 @@ margin: 0;
   padding: 80px 20px;
 }
 
-.foto-perfil img{
+.minha-foto img{
 width: 220px;
 height: 220px;
 border-radius: 50%;
@@ -108,10 +108,11 @@ transition: color 0.3s ease, transform 0.3s ease;
   margin-top: 2rem;
 }
 
-.skill-grid {
+
+.skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-  gap:1.5rem;
+  gap: 1.5rem;
   margin-top: 2rem;
 }
 
@@ -119,7 +120,9 @@ transition: color 0.3s ease, transform 0.3s ease;
   background-color: #8b58e9;
   padding: 1.2rem;
   border-radius: 12px;
+  flex-direction: column;
   align-items: center;
+  text-align: center;
   display: flex;
   gap: 0.8rem;
   justify-content:center; 
@@ -180,6 +183,61 @@ margin-top: auto;
 
 .btn-github:hover {
   background-color: #9f67ff;
+}
+
+.timeline {
+  max-width: 800px;
+  margin: 4rem auto;
+  position: relative;
+  padding-left: 3rem;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 18px;
+  top: 0;
+  width: 2px;
+  height: 100%;
+  background: #6c3df4; 
+}
+
+.timeline-item {
+  position: relative;
+  padding-left: 60px;
+  margin-bottom: 3rem;
+}
+
+.timeline-icon {
+  background:#6c3df4;
+  left: 0;
+  width: 36px;
+  height: 36px;
+  transform: translateX(0);
+  border-radius: 50%;
+  display: flex;
+  color: #ffff;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.timeline-content {
+  background:#8b58e9;
+  padding: 1.5rem;
+  border-radius: 12px;
+}
+
+.timeline-year {
+  font-size :0.85rem;
+  color: #9ca3af;
+  font-weight: 600;
+  display:block;
+  margin-bottom: 0.5rem;
+}
+
+.timeline-content h3{
+  margin-bottom: 0.6rem;
 }
 
 #Contato {
