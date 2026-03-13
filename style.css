@@ -17,6 +17,49 @@ line-height: 1.6;
 margin: 0;
 }
 
+.hamburguer{
+  display: none;
+  font-size : 28px;
+  background-color: #111;
+  border: none;
+  color: white;
+}
+
+/* quando for celular */
+@media (max-width: 768px) {
+    
+  .hamburguer {
+    display: block;
+  }
+
+  .menu ul {
+    display: none;
+    flex-direction: column;
+    background: black; 
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 180px;
+    padding: 15px;
+    border-radius: 10px;
+    z-index: 999;
+  }
+
+  .menu {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background: black;
+  }
+
+  .menu ul.ativo{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 .menu {
   width: 100%;
   max-width: 1200px;
@@ -55,6 +98,10 @@ margin: 0;
    }
 }
 
+#hero{
+   margin-top: 100px;
+}
+
 #hero {
   display: flex;
   justify-content: space-between;
@@ -64,6 +111,12 @@ margin: 0;
   padding: 80px 20px;
 }
 
+@media (max-width: 768px){
+  #hero {
+    flex-direction: column;
+    text-align: center;
+  }
+}
 
 .minha_foto img{
 width: 220px;
@@ -79,12 +132,6 @@ border: 3px solid #ddd;
   text-align: right;
 }
 
-@media (max-width: 768px){
-  #inicio {
-    flex-direction: column;
-    text-align: center;
-  }
-}
 
 .section {
   padding: 60px 0;
@@ -190,6 +237,7 @@ margin-bottom: 3rem;
 }
 
 .project-card {
+background-color: #3b3737;
 padding: 1.5px;
 border-radius: 12px;
 display: flex;
@@ -197,6 +245,7 @@ flex-direction: column;
 gap: 1rem;
 text-decoration: solid;
 justify-content: space-between;
+transition: transform 0.3s ease, box-shadow 0.3 ease;
 }
 
 .project-card:houver {
@@ -226,14 +275,14 @@ margin-top: auto;
   background-color: #9f67ff;
 }
 
-.timeline {
+#educacao {
   max-width: 800px;
   margin: 4rem auto;
   position: relative;
   padding-left: 3rem;
 }
 
-.timeline::before {
+#educacao::before {
   content: "";
   position: absolute;
   left: 18px;
@@ -243,15 +292,16 @@ margin-top: auto;
   background: #6c3df4; 
 }
 
-.timeline-item {
+#educacao-item {
   position: relative;
   padding-left: 60px;
   margin-bottom: 3rem;
 }
 
-.timeline-icon {
+#educacao-icon {
   background:#6c3df4;
   left: 0;
+  position: absolute;
   width: 36px;
   height: 36px;
   transform: translateX(0);
@@ -263,13 +313,13 @@ margin-top: auto;
   z-index: 2;
 }
 
-.timeline-content {
+#educacao-content {
   background:#8b58e9;
   padding: 1.5rem;
   border-radius: 12px;
 }
 
-.timeline-year {
+#educacao-year {
   font-size :0.85rem;
   color: #9ca3af;
   font-weight: 600;
@@ -277,26 +327,26 @@ margin-top: auto;
   margin-bottom: 0.5rem;
 }
 
-.timeline-content h3{
+#educacao-content h3{
   margin-bottom: 0.6rem;
 }
 
-#Contato {
+#contato {
 max-width: 500px; 
 margin: 4rem auto 0;
 padding: 2rem;
 text-align: center;
 }
 
-#Contato form {
+#contato form {
 display: flex;
 flex-direction: column;
 gap: 0.8rem;
 margin-top: 1rem; 
 }
 
-#Contato input,
-#Contato textarea {
+#contato input,
+#contato textarea {
 width: 100%; 
 padding: 0.75rem 1rem;
 font-size: 1rem;
@@ -306,14 +356,14 @@ border: 1px solid #6c3df4;
 border-radius: 6px;
 }
 
-#Contato input::placeholder,
-#Contato textarea::placeholder {
+#contato input::placeholder,
+#contato textarea::placeholder {
   color: #9ca3af;
   font-size: 0.95rem;
   font-family: inherit;
 }
 
-#Contato button {
+#contato button {
   margin-top: 1rem;
   padding: 0.8rem;
   background-color: #7c3aed;
@@ -325,7 +375,7 @@ border-radius: 6px;
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-#Contato button:hover {
+#contato button:hover {
   background-color: #9f67ff;
   transform: translateY(-2px);
 }
