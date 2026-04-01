@@ -6,12 +6,13 @@
         <link rel="stylesheet" href="./style.css" />
         <link rel="stylesheet"
            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+           <script src="script.js" defer></script> 
         <title>Portifólio</title>
     </head>
 
       <nav class="menu">
 
-        <div class ="logo">Menu</div>
+        <div class ="logo"></div>
         <button class="hamburguer" id="btn-menu">
           ☰
         </button>
@@ -39,6 +40,8 @@
         <p>
            Sou desenvolvedora, em formação, estou no primeiro período da faculdade de análise e desenvolvimento de sistemas.  
         </p>
+          <a id="inicio-curriculo" href="/assets/currículo.pdf" target="_blank" aria-label="Curriculo">Baixar currículo 
+            <i class = "fa-solid fa-download"></i></a>
         </div>
        </section>
        </main>
@@ -48,22 +51,11 @@
          <p>Sou estudante, com foco back-end, buscando solucionar problemas reais, com código, dedico-me a desenvolver APIs escaláveis,
             integrar com bancos de dados, para deixar mais perto do profissional possível. 
          </p>
-          <p>Quando não estou estudando, gosto de ler, assistir séries, e aprender algo novo, sempre buscando otimizar o conhecimento</p>
+          <p>Quando estou desenvolvendo goste de me dedicar ao máximo, para desenvolver aplicações escaláveis e intuitivas, sem muitas dificuldades para o usuário entender.</p>
+          <p> Antes mesmo de ingressar na faculdade de análise e desenvolvimento de sistemas, eu já trabalhava como freelancer desenvolvendo sites estáticos, 
+            para pequenos comércios e empreendedores no meu bairro. 
+          </p>
        </section> 
-
-        <div id="minhas-redes", class="section">
-            <div class="social-icons">
-            <a href="https://instagram.com" target="_blank" aria-label="Instagram">
-               <i class="fa-brands fa-instagram"></i>
-            </a>
-            <a href="https://linkedin.com/in/larissa-conceicao-" target="_blank" aria-label="Linkedin">
-              <i class="fa-brands fa-linkedin"></i> 
-            </a>    
-            <a href="https://github.com/LarissaDias-Barbosa" target="_blank" aria-label="Github">
-               <i class="fa-brands fa-github"></i>
-            </a>
-             </div>
-            </div>
 
         <section id="skills", class="container">
         <h2>Minhas Skills</h2>
@@ -97,10 +89,10 @@
             <div class="projects-container">
 
             <article class="project-card">
-                <h3>Produtividade</h3>
+                <h3>Adote um Pet</h3>
                 <p>
-                 App de produtividade, este projeto, desenvolvi uma API back-end, na qual é possível o usuário pode entrar criar seu perfil, 
-                e começar a utiliza-ló como se fosse o notion. Onde o usuário poderá organizar tarefas, criar listas, calendários. 
+                 Projeto desenvolvido em java com Spring Boot, postgreSQL, Spring Security,é um back-end criado para gerenciar uma franquia de pet shops,
+                 onde os animais podem ser cadastrados, e quando um novo tutor estiver interessado em adota-ló, pode pedir adoção no sistema do pet shop. 
                 </p>
    
                <a href="https://github.com/LarissaDias-Barbosa/projeto-Produtividade" target="_blank"  rel="noopener noreferrer" class="btn-github">
@@ -109,11 +101,11 @@
             </article>
 
             <article class="project-card">
-                 <h3>Studio Beleza</h3> 
+                 <h3>Salão de beleza</h3> 
                  <p>
-                   Site profissional para maquiador, este projeto tive como inspiração, meu amigo que exerce esta profissão tão linda, 
-                tendo a missão de cuidar, da autoestima do próximo. Este é meu primeiro projeto fullStack, o front-end é desenvolvido com HTML, CSS, JavaScript.
-            E, o back-end, desenvolvi utilizando java, spring boot, banco postgreeSQL. 
+                   Domínios de microsserviços desenvolvidos em java com Spring Boot, na qual cada domínio é responsável por um trabalho diferente, 
+                   sendo o domínio de serviços responsável pelos atendimentos como corte, escova, hidratação. domínio de clientes tem a responsabilidade pela
+                   promoção caso este direito. agendamentos é responsavél pelo gerenciamento de horários dos clientes.  
                  </p>
          
                <a href="https://github.com/LarissaDias-Barbosa/projeto Studio" target="_blank"  rel="noopener noreferrer" class="btn-github">
@@ -125,6 +117,8 @@
              
 
         <section id="educacao">
+         <ul>
+          <li>
          <h2>Educação</h2>
          <div class="educacao">
             <span class="aducacao-icon"></span>
@@ -136,9 +130,14 @@
                </p>
             </div>
          </div>
+         </li>
+         </ul>
         </section>
 
         <section id="educacao">
+
+         <ul>
+            <li>
          <h2>Educação</h2>
          <div class="educacao">
             <span class="educacao-icon"></span>
@@ -150,6 +149,8 @@
                </P>
             </div>
          </div>
+         </li>
+         </ul>
         </section>
 
         <section id="contato", class="section">
@@ -185,7 +186,6 @@
         </section>
 
         <footer id="footer">
-         <p>&copy; 2026 Larissa Dias - Todos os direitos reservados</p>
 
         <div id="minhas-redes", class="section">
          <div class="social-icons">
@@ -202,6 +202,8 @@
         </a>
       </div>
          </div>
+
+         <p>&copy; 2026 Larissa Dias - Todos os direitos reservados</p>
        </footer> 
     </body>
 </html>

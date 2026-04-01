@@ -20,7 +20,7 @@ margin: 0;
 .hamburguer{
   display: none;
   font-size : 28px;
-  background-color: #111;
+  background-color: #242222;
   border: none;
   color: white;
 }
@@ -35,7 +35,7 @@ margin: 0;
   .menu ul {
     display: none;
     flex-direction: column;
-    background: black; 
+    background: #363434; 
     position: absolute;
     top: 100%;
     right: 0;
@@ -51,7 +51,7 @@ margin: 0;
     justify-content: space-between;
     align-items: center;
     padding: 15px 20px;
-    background: black;
+    background: #242222;
   }
 
   .menu ul.ativo{
@@ -123,7 +123,7 @@ width: 220px;
 height: 220px;
 border-radius: 50%;
 object-fit: cover;
-border: 3px solid #ddd;
+border: 3px solid #9448f0;
 }
 
 #inicio {
@@ -132,6 +132,21 @@ border: 3px solid #ddd;
   text-align: right;
 }
 
+#inicio-curriculo {
+  display: inline-block;
+  background-color: #9448f0;
+  color:#e1e7f1;
+  margin-top: 16px;
+  padding: 10px 18px;
+  border-radius: 25px;
+  font-size: 14px;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+#inicio-curriculo:hover {
+ transform: translateY(-2px);
+}
 
 .section {
   padding: 60px 0;
@@ -153,33 +168,6 @@ border: 3px solid #ddd;
   font-size: 16px;
   line-height: 1.6;
   margin-bottom: 12px;
-}
-
-#minhas-redes {
-  display: flex;
-  gap: 2.2rem;
-}
-
-.social-icons {
-  display: flex;
-  gap: 16px;
-}
-
-.social-icons a {
-width: 44px;
-height: 44px;
-color: #b149b1;
-border-radius: 50%;
-display: flex;
-align-items: flex-end;
-justify-content: flex-end;
-text-decoration: none;
-transition: color 0.3s ease, transform 0.3s ease;
-}
-
-.social-icons i{
-  font-size: 20px;
-  color: #fff;
 }
 
 #skills h2{
@@ -237,8 +225,8 @@ margin-bottom: 3rem;
 }
 
 .project-card {
-background-color: #3b3737;
-padding: 1.5px;
+background-color: #8b58e9;
+padding: 5px;
 border-radius: 12px;
 display: flex;
 flex-direction: column;
@@ -248,8 +236,9 @@ justify-content: space-between;
 transition: transform 0.3s ease, box-shadow 0.3 ease;
 }
 
-.project-card:houver {
+.project-card:hover {
   transform: translateY(-5px);
+  border-color: #a02faf;
   box-shadow: 0 8px 20px rgba(139, 88, 233, 0.4);
 }
 
@@ -261,7 +250,7 @@ margin-top: auto;
   display: inline-block;
   margin-top: 1.5rem;
   align-self: flex-start;
-  background-color: #7c3aed; /* roxo elegante */
+  background-color: #4005a7; /* roxo elegante */
   color: white;
   padding: 0.6rem 1.2rem;
   border-radius: 8px;
