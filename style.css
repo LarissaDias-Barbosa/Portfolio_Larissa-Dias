@@ -9,7 +9,7 @@ section {
 }
 
 body{    
-background-color: black;
+background: linear-gradient(135deg, #0a0a0f, #12121a);
 color: white;
 font-family: Arial, Helvetica, sans-serif;
 text-align: left;
@@ -119,8 +119,8 @@ margin: 0;
 }
 
 .minha_foto img{
-width: 220px;
-height: 220px;
+width: 300px;
+height: 300px;
 border-radius: 50%;
 object-fit: cover;
 border: 3px solid #9448f0;
@@ -128,8 +128,29 @@ border: 3px solid #9448f0;
 
 #inicio {
   max-width: 520px;
-  line-height: 1.6;
   text-align: right;
+}
+
+/* subtítulo */
+#inicio h2{
+  font-size : 18px;
+  font-weight: 500;
+  color: #a855f7;
+  margin-bottom: 10px;
+}
+
+/* nome */
+#inicio h1{
+  font-size : 30px;
+  font-weight: 1000;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+#inicio p{
+  font-size: 17px;
+  line-height: 1.6;
+  color: #cbd5e1;
 }
 
 #inicio-curriculo {
@@ -153,10 +174,10 @@ border: 3px solid #9448f0;
 }
 
 #sobre-mim {
-  max-width: 700px; 
+  max-width: 700px;
   margin: 0 auto;
-  padding:60px 20px;
-  text-align: center; 
+  padding: 60px 20px;
+  text-align: center;
 }
 
 #sobre-mim h2{
@@ -165,7 +186,7 @@ border: 3px solid #9448f0;
 }
 
 #sobre-mim p{
-  font-size: 16px;
+  font-size: 20px;
   line-height: 1.6;
   margin-bottom: 12px;
 }
@@ -174,7 +195,6 @@ border: 3px solid #9448f0;
   text-align: center;
   margin-top: 2rem;
 }
-
 
 .skills-grid {
   display: grid;
@@ -197,9 +217,8 @@ border: 3px solid #9448f0;
   transition: transform 0.2s ease, box-shadow 0.2s; 
 }
 
-.skill-card img {
-  width: 24px;               /* tamanho profissional */
-  height: 24px;
+.skill-card i {
+  font-size: 2.5rem;
 }
 
 .skill-card:hover {
@@ -207,24 +226,24 @@ border: 3px solid #9448f0;
  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
 }
 
-#projects{
+#projetos{
 max-width: 1100px;
 margin: 0 auto; 
 padding: 2rem; 
 }
 
-#projects h2{
+#projetos h2{
 text-align: center;
 margin-bottom: 3rem;
 }
 
-.projects-container {
+.projetos-container {
  display: grid;
  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
  gap: 2rem; 
 }
 
-.project-card {
+.projeto-card {
 background-color: #8b58e9;
 padding: 5px;
 border-radius: 12px;
@@ -233,10 +252,17 @@ flex-direction: column;
 gap: 1rem;
 text-decoration: solid;
 justify-content: space-between;
+list-style: none;
 transition: transform 0.3s ease, box-shadow 0.3 ease;
 }
 
-.project-card:hover {
+.projeto-card ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.projeto-card:hover {
   transform: translateY(-5px);
   border-color: #a02faf;
   box-shadow: 0 8px 20px rgba(139, 88, 233, 0.4);
@@ -264,6 +290,28 @@ margin-top: auto;
   background-color: #9f67ff;
 }
 
+.btn-code{
+  margin-top: auto;
+}
+
+.btn-code {
+  display: inline-block;
+  margin-top: 1.5rem;
+  align-self: flex-start;
+  background-color: #4005a7; /* roxo elegante */
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-code:hover {
+  background-color: #9f67ff;
+}
+
 #educacao {
   max-width: 800px;
   margin: 4rem auto;
@@ -271,23 +319,25 @@ margin-top: auto;
   padding-left: 3rem;
 }
 
-#educacao::before {
+.timeline {
   content: "";
   position: absolute;
   left: 18px;
   top: 0;
   width: 2px;
   height: 100%;
-  background: #6c3df4; 
+  background: #6c3df4;
+  text-decoration: none;
+  list-style: none; 
 }
 
-#educacao-item {
+.educacao-item {
   position: relative;
   padding-left: 60px;
   margin-bottom: 3rem;
 }
 
-#educacao-icon {
+.educacao-icon {
   background:#6c3df4;
   left: 0;
   position: absolute;
@@ -300,15 +350,16 @@ margin-top: auto;
   align-items: center;
   justify-content: center;
   z-index: 2;
+  text-decoration: none;
 }
 
-#educacao-content {
+.educacao-content {
   background:#8b58e9;
   padding: 1.5rem;
   border-radius: 12px;
 }
 
-#educacao-year {
+.educacao-year {
   font-size :0.85rem;
   color: #9ca3af;
   font-weight: 600;
@@ -316,7 +367,7 @@ margin-top: auto;
   margin-bottom: 0.5rem;
 }
 
-#educacao-content h3{
+.educacao-content h3{
   margin-bottom: 0.6rem;
 }
 

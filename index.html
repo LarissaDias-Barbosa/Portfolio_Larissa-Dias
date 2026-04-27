@@ -22,7 +22,7 @@
          <li><a href="#sobre-mim">Sobre-Mim</a></li>
          <li><a href="#educacao">Educação</a></li>
          <li><a href="#skills">Skills</a></li>
-         <li><a href="#projects">Projects</a></li> 
+         <li><a href="#projetos">Projetos</a></li> 
          <li><a href="#contato">Contato</a></li>
         </ul> 
      </nav>
@@ -32,13 +32,15 @@
         <main> 
         <section id="hero"> 
          <div class="minha_foto">
-         <img src="img/minha_foto.jpg" alt="Foto de Larissa Dias">
+         <img src="img/foto_portfólio.jpg" alt="Foto de Larissa Dias">
         </div>  
 
         <div id="inicio" class="section">
+         <h2>Estudante de desenvolvimento back-end</h2>
         <h1>Larissa Dias</h1>
         <p>
-           Sou desenvolvedora, em formação, estou no primeiro período da faculdade de análise e desenvolvimento de sistemas.  
+           Sou desenvolvedora, em formação, estou no primeiro período da faculdade de análise e desenvolvimento de sistemas. Atualmente estou 
+           estudando java, Spring Boot, Mysql , PostgreSQL. Construindo APIS REST escaláveis, fazendo integração com banco de dados. 
         </p>
           <a id="inicio-curriculo" href="/assets/currículo.pdf" target="_blank" aria-label="Curriculo">Baixar currículo 
             <i class = "fa-solid fa-download"></i></a>
@@ -63,13 +65,13 @@
           <div class="skills-grid">
         
             <div class="skill-card">
-            <i class="fa-solid fa-code"></i>
+            <i class="fa-brands fa-java"></i>
             <h3>back-end</h3> 
             <p>Experiência com java em APIs Rest, com framework spring boot</p>  
             </div>
 
             <div class="skill-card">
-             <i class="fa-solid fa-code"></i>
+             <i class="fa-brands fa-js"></i>
              <h3>front-end</h3>
              <p>JavaScript, HTML, CSS</p>   
             </div>
@@ -83,50 +85,66 @@
          </div>   
          </section>   
 
-        <section id="projects" class="section">
+        <section id="projetos" class="section">
+         
             <h2>Meus Projetos</h2>
 
-            <div class="projects-container">
+            <div class="projetos-container">
 
-            <article class="project-card">
-                <h3>Adote um Pet</h3>
+            <article class="projeto-card">
+               <ul>
+                  <li>
+                <h3>Safe Pass</h3>
                 <p>
-                 Projeto desenvolvido em java com Spring Boot, postgreSQL, Spring Security,é um back-end criado para gerenciar uma franquia de pet shops,
-                 onde os animais podem ser cadastrados, e quando um novo tutor estiver interessado em adota-ló, pode pedir adoção no sistema do pet shop. 
+                 Projeto desenvolvido em java com Spring Boot, mySQL, Spring Security, OAth2, swagger, é um back-end criado para gerenciar um sistema gerenciador de senhas.
+                 Desenvolvido em parceria com meu amigo 'Matheus Ribeiro', ainda estamos desenvolvendo o projeto, só está restando os testes no postman os testes unitários. 
+                 Com esta API, conseguimos resolver um problema real de segurança, visto que muitas pessoas não guardam suas senhas de maneira adequada. 
                 </p>
    
-               <a href="https://github.com/LarissaDias-Barbosa/projeto-Produtividade" target="_blank"  rel="noopener noreferrer" class="btn-github">
+               <a href="https://github.com/LarissaDias-Barbosa/Safe-Pass" target="_blank"  rel="noopener noreferrer" class="btn-github">
                 Github
                </a> 
             </article>
+               </li>
+               </ul>
 
-            <article class="project-card">
-                 <h3>Salão de beleza</h3> 
+
+            <article class="projeto-card">
+               <ul>
+                  <li>
+                 <h3>Site Portfólio</h3> 
                  <p>
-                   Domínios de microsserviços desenvolvidos em java com Spring Boot, na qual cada domínio é responsável por um trabalho diferente, 
-                   sendo o domínio de serviços responsável pelos atendimentos como corte, escova, hidratação. domínio de clientes tem a responsabilidade pela
-                   promoção caso este direito. agendamentos é responsavél pelo gerenciamento de horários dos clientes.  
+                   Site feito com HTML, CSS e javaScript, para ajudar um maquiador profissional a divulgar seus serviços. Com este site aprendi princípios
+                   fundamentais de front-end básico, que inclusive me ajudaram a desenvolver meu portfólio. Esolucionar um problema real de visibilidade de um cliente.   
                  </p>
          
-               <a href="https://github.com/LarissaDias-Barbosa/projeto Studio" target="_blank"  rel="noopener noreferrer" class="btn-github">
+               <a href="https://github.com/LarissaDias-Barbosa/site-portf-lio" target="_blank"  rel="noopener noreferrer" class="btn-github">
                 Github
-               </a>    
+               </a> 
+               <a href="https://bruno-toledo.vercel.app"  target="_blank" rel="" class="btn-code">
+                  Code</a>
             </article>
+              </li>
+              </ul>
             </div>
             </section>
              
 
-        <section id="educacao">
-         <ul>
+        <section id="educacao" class="section">
+         <ul class="timeline">
           <li>
          <h2>Educação</h2>
          <div class="educacao">
-            <span class="aducacao-icon"></span>
-            <div class="educacao-content">
-               <span class="timeline-year">2023 - 2025</span>
+             <div class="educacao-item"></div>
+
+            <div class="educacao-icon">
+              <i class="fa-solid fa-graduation-cap"></i> 
+
+               <div class="educacao-content"></div>
+               <span class="educacao-year">2023 - 2025</span>
                <h3>Gestão de Tecnologia da informeção</h3>
                <p>Graduação na faculdade anhanguera, gestão de tecnologia da informação, 
-                  curso na qual aprendi, os fundamentos da TI, para depois partir para um conhecimento mais técnico.
+                  curso na qual aprendi, os fundamentos da TI, para depois partir para um conhecimento mais voltados para programação.
                </p>
             </div>
          </div>
@@ -134,18 +152,21 @@
          </ul>
         </section>
 
-        <section id="educacao">
-
-         <ul>
+        <section id="educacao" class="section">
+         <ul class="timeline">
             <li>
          <h2>Educação</h2>
          <div class="educacao">
-            <span class="educacao-icon"></span>
-            <div class="educacao-content">
+            <div class="educacao-item"></div>
+
+            <div class="educacao-icon">
+               <i class="fa-solid fa-graduation-cap"></i>
+
+               <div class="educacao-content"></div>
                <span class="timeline-year">2026 - 2028</span>
                <h3>Análise e Desenvolvimento de Sistemas</h3>
-               <P>Graduação na faculdade anhanguera, na qual estou revisando o que aprendi com estudo autoditada,
-                  e aprendendo ainda mais, sobre o mercado tech. 
+               <P>Graduação na faculdade anhanguera, na qual estou no primeiro período em busca do primeiro estágio 
+                  em desenvolvimento back-end ou fullStack. Em constante aperfeiçoamento em conhecimento back-end com java, Spring Boot, e linguagem SQL.  
                </P>
             </div>
          </div>
