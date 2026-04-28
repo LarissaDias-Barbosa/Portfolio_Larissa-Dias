@@ -244,7 +244,7 @@ margin-bottom: 3rem;
 }
 
 .projeto-card {
-background-color: #8b58e9;
+background-color:#110c1b;
 padding: 5px;
 border-radius: 12px;
 display: flex;
@@ -294,7 +294,7 @@ margin-top: auto;
   margin-top: auto;
 }
 
-.btn-code {
+.btn-ver-Projeto {
   display: inline-block;
   margin-top: 1.5rem;
   align-self: flex-start;
@@ -308,7 +308,7 @@ margin-top: auto;
   transition: 0.3s;
 }
 
-.btn-code:hover {
+.btn-ver-Projeto:hover {
   background-color: #9f67ff;
 }
 
@@ -320,6 +320,12 @@ margin-top: auto;
 }
 
 .timeline {
+  position: relative;
+  list-style: none;
+  padding-left: 0;
+}
+
+.timeline::before {
   content: "";
   position: absolute;
   left: 18px;
@@ -327,8 +333,7 @@ margin-top: auto;
   width: 2px;
   height: 100%;
   background: #6c3df4;
-  text-decoration: none;
-  list-style: none; 
+  text-decoration: none; 
 }
 
 .educacao-item {
@@ -338,7 +343,8 @@ margin-top: auto;
 }
 
 .educacao-icon {
-  background:#6c3df4;
+  background:#1d1a29;
+  top: 0;
   left: 0;
   position: absolute;
   width: 36px;
@@ -354,7 +360,7 @@ margin-top: auto;
 }
 
 .educacao-content {
-  background:#8b58e9;
+  background:#110c1b;
   padding: 1.5rem;
   border-radius: 12px;
 }
@@ -365,6 +371,15 @@ margin-top: auto;
   font-weight: 600;
   display:block;
   margin-bottom: 0.5rem;
+}
+
+.educacao-content{
+  transition: all 0.3s ease;
+}
+
+.educacao-content:hover{
+  box-shadow: 1px solid rgba(0, 34, 234 ,0.8);
+  box-shadow: 0 0 25px rgba(0, 34, 234, 0.5);
 }
 
 .educacao-content h3{
