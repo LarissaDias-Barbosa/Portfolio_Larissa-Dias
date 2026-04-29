@@ -241,25 +241,20 @@ margin-bottom: 3rem;
  display: grid;
  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
  gap: 2rem; 
+ list-style: none;
+ padding: 0;
+ margin: 0;
 }
 
 .projeto-card {
 background-color:#110c1b;
-padding: 5px;
+padding: 1.5rem;
 border-radius: 12px;
 display: flex;
 flex-direction: column;
 gap: 1rem;
-text-decoration: solid;
 justify-content: space-between;
-list-style: none;
 transition: transform 0.3s ease, box-shadow 0.3 ease;
-}
-
-.projeto-card ul{
-  list-style: none;
-  padding: 0;
-  margin: 0;
 }
 
 .projeto-card:hover {
